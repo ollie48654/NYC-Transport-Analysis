@@ -1,0 +1,2416 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_31be8689814de8e2e2a6d6bd31255455 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_31be8689814de8e2e2a6d6bd31255455" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_31be8689814de8e2e2a6d6bd31255455 = L.map(
+                "map_31be8689814de8e2e2a6d6bd31255455",
+                {
+                    center: [40.7282, -73.9942],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4675dbeb61a92578e774e3e4af49dd32 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4675dbeb61a92578e774e3e4af49dd32.addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+            var circle_marker_5a2e27f00b1ee89791b049bf377acbab = L.circleMarker(
+                [40.71936817193331, -74.04312290811471],
+                {"bubblingMouseEvents": true, "color": "#a50026", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a50026", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25.0, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_a05722d4c1f7841eff85b371e04a9af3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2119586b5722f4fc2a40ee793616f369 = $(`<div id="html_2119586b5722f4fc2a40ee793616f369" style="width: 100.0%; height: 100.0%;"><b>Grove St PATH</b><br>Departures: 21,189<br>Avg trip: 7.4 min</div>`)[0];
+                popup_a05722d4c1f7841eff85b371e04a9af3.setContent(html_2119586b5722f4fc2a40ee793616f369);
+            
+        
+
+        circle_marker_5a2e27f00b1ee89791b049bf377acbab.bindPopup(popup_a05722d4c1f7841eff85b371e04a9af3)
+        ;
+
+        
+    
+    
+            var circle_marker_cc0f3d6bac33a09b0927980c92ee1f46 = L.circleMarker(
+                [40.73608708223173, -74.02913759658237],
+                {"bubblingMouseEvents": true, "color": "#c82227", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c82227", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.51607117572096, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_fa5e36040a01b1616e48ec23c62bd201 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6a9cd41063bfc35710981226064a06a3 = $(`<div id="html_6a9cd41063bfc35710981226064a06a3" style="width: 100.0%; height: 100.0%;"><b>Hoboken Terminal - River St & Hudson Pl</b><br>Departures: 19,617<br>Avg trip: 8.7 min</div>`)[0];
+                popup_fa5e36040a01b1616e48ec23c62bd201.setContent(html_6a9cd41063bfc35710981226064a06a3);
+            
+        
+
+        circle_marker_cc0f3d6bac33a09b0927980c92ee1f46.bindPopup(popup_fa5e36040a01b1616e48ec23c62bd201)
+        ;
+
+        
+    
+    
+            var circle_marker_ff584215dc148766fde33caa20e4b6db = L.circleMarker(
+                [40.7370211881434, -74.02777759759384],
+                {"bubblingMouseEvents": true, "color": "#fdad60", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdad60", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.028413649879642, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_5f74a26258293f0e08e0ece23cfa07ad = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6181602946d684185d3fbca09e590cd0 = $(`<div id="html_6181602946d684185d3fbca09e590cd0" style="width: 100.0%; height: 100.0%;"><b>South Waterfront Walkway - Sinatra Dr & 1 St</b><br>Departures: 14,863<br>Avg trip: 12.8 min</div>`)[0];
+                popup_5f74a26258293f0e08e0ece23cfa07ad.setContent(html_6181602946d684185d3fbca09e590cd0);
+            
+        
+
+        circle_marker_ff584215dc148766fde33caa20e4b6db.bindPopup(popup_5f74a26258293f0e08e0ece23cfa07ad)
+        ;
+
+        
+    
+    
+            var circle_marker_f5dbfc7676a447f56c653253eaeb551f = L.circleMarker(
+                [40.73593198591031, -74.03033320348275],
+                {"bubblingMouseEvents": true, "color": "#feeba1", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feeba1", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.27106244395148, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_429f07eb04dda29060b1294a12826cac = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ece0aada67d99fdaaeca89b1ed8e8b4e = $(`<div id="html_ece0aada67d99fdaaeca89b1ed8e8b4e" style="width: 100.0%; height: 100.0%;"><b>Hoboken Terminal - Hudson St & Hudson Pl</b><br>Departures: 11,942<br>Avg trip: 8.0 min</div>`)[0];
+                popup_429f07eb04dda29060b1294a12826cac.setContent(html_ece0aada67d99fdaaeca89b1ed8e8b4e);
+            
+        
+
+        circle_marker_f5dbfc7676a447f56c653253eaeb551f.bindPopup(popup_429f07eb04dda29060b1294a12826cac)
+        ;
+
+        
+    
+    
+            var circle_marker_98988c808b1c6a477b3fdb037db2a249 = L.circleMarker(
+                [40.737315685969335, -74.03100530531958],
+                {"bubblingMouseEvents": true, "color": "#fffab7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffab7", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.341246991079435, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_4a47863cda80dc1d8f1f1a0c2d7d4660 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e2b074b966230d4d6186c0dcd74c74dc = $(`<div id="html_e2b074b966230d4d6186c0dcd74c74dc" style="width: 100.0%; height: 100.0%;"><b>City Hall - Washington St & 1 St</b><br>Departures: 10,957<br>Avg trip: 8.7 min</div>`)[0];
+                popup_4a47863cda80dc1d8f1f1a0c2d7d4660.setContent(html_e2b074b966230d4d6186c0dcd74c74dc);
+            
+        
+
+        circle_marker_98988c808b1c6a477b3fdb037db2a249.bindPopup(popup_4a47863cda80dc1d8f1f1a0c2d7d4660)
+        ;
+
+        
+    
+    
+            var circle_marker_947a1a174b1e815f888f743035dcc32f = L.circleMarker(
+                [40.727223965951616, -74.03375357253238],
+                {"bubblingMouseEvents": true, "color": "#fffebe", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffebe", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.006135838013876, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_933e8b8d54ed8f6a1e6c3df23c234649 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1afc4fda375ad374a7b9490b6dd33c9b = $(`<div id="html_1afc4fda375ad374a7b9490b6dd33c9b" style="width: 100.0%; height: 100.0%;"><b>Newport PATH</b><br>Departures: 10,602<br>Avg trip: 10.8 min</div>`)[0];
+                popup_933e8b8d54ed8f6a1e6c3df23c234649.setContent(html_1afc4fda375ad374a7b9490b6dd33c9b);
+            
+        
+
+        circle_marker_947a1a174b1e815f888f743035dcc32f.bindPopup(popup_933e8b8d54ed8f6a1e6c3df23c234649)
+        ;
+
+        
+    
+    
+            var circle_marker_0e6b78a9414fa52feed251329ee86241 = L.circleMarker(
+                [40.72757044428501, -74.04425289066468],
+                {"bubblingMouseEvents": true, "color": "#f0f9db", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0f9db", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.984754802473216, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_11745e1ddb6fa9465c7f2911481852b5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2e53c2df3b53e830714a72b2b429a36f = $(`<div id="html_2e53c2df3b53e830714a72b2b429a36f" style="width: 100.0%; height: 100.0%;"><b>Hamilton Park</b><br>Departures: 9,520<br>Avg trip: 9.5 min</div>`)[0];
+                popup_11745e1ddb6fa9465c7f2911481852b5.setContent(html_2e53c2df3b53e830714a72b2b429a36f);
+            
+        
+
+        circle_marker_0e6b78a9414fa52feed251329ee86241.bindPopup(popup_11745e1ddb6fa9465c7f2911481852b5)
+        ;
+
+        
+    
+    
+            var circle_marker_4267cfacd837a22e5b9db9897c92260d = L.circleMarker(
+                [40.7310624197441, -74.06440413497073],
+                {"bubblingMouseEvents": true, "color": "#edf8df", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#edf8df", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.851654316326048, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_334ee4cb8b93f9b9d741daf92ee786fe = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_267c32d3767fd548b03211b1afb1f3e3 = $(`<div id="html_267c32d3767fd548b03211b1afb1f3e3" style="width: 100.0%; height: 100.0%;"><b>Bergen Ave & Sip Ave</b><br>Departures: 9,379<br>Avg trip: 8.2 min</div>`)[0];
+                popup_334ee4cb8b93f9b9d741daf92ee786fe.setContent(html_267c32d3767fd548b03211b1afb1f3e3);
+            
+        
+
+        circle_marker_4267cfacd837a22e5b9db9897c92260d.bindPopup(popup_334ee4cb8b93f9b9d741daf92ee786fe)
+        ;
+
+        
+    
+    
+            var circle_marker_69ddcac310ceb286f982c245fdfa0dd3 = L.circleMarker(
+                [40.72874565075494, -74.0321104339343],
+                {"bubblingMouseEvents": true, "color": "#eaf7e6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eaf7e6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.649643649407656, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_6caa9716f7be723604f85580e868f4d1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_76c3b675294327a6fc61078f7269940e = $(`<div id="html_76c3b675294327a6fc61078f7269940e" style="width: 100.0%; height: 100.0%;"><b>Newport Pkwy</b><br>Departures: 9,165<br>Avg trip: 13.8 min</div>`)[0];
+                popup_6caa9716f7be723604f85580e868f4d1.setContent(html_76c3b675294327a6fc61078f7269940e);
+            
+        
+
+        circle_marker_69ddcac310ceb286f982c245fdfa0dd3.bindPopup(popup_6caa9716f7be723604f85580e868f4d1)
+        ;
+
+        
+    
+    
+            var circle_marker_7ac5c869b993e7545a4f31a144af65c8 = L.circleMarker(
+                [40.74996570676652, -74.02723149491666],
+                {"bubblingMouseEvents": true, "color": "#daf0f6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#daf0f6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.75664322461887, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_17e0fb3469708db2f9beaa53d69f8861 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d6055ca3a0f469897b72cc9726b13cd2 = $(`<div id="html_d6055ca3a0f469897b72cc9726b13cd2" style="width: 100.0%; height: 100.0%;"><b>11 St & Washington St</b><br>Departures: 8,219<br>Avg trip: 9.5 min</div>`)[0];
+                popup_17e0fb3469708db2f9beaa53d69f8861.setContent(html_d6055ca3a0f469897b72cc9726b13cd2);
+            
+        
+
+        circle_marker_7ac5c869b993e7545a4f31a144af65c8.bindPopup(popup_17e0fb3469708db2f9beaa53d69f8861)
+        ;
+
+        
+    
+    
+            var circle_marker_ed5476fae0f597af354a4237a2164f3b = L.circleMarker(
+                [40.752877866603214, -74.02430520773967],
+                {"bubblingMouseEvents": true, "color": "#d1ecf4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d1ecf4", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.468730825506206, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_8d21ac52be5492dfaac6060f6e99436a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e30382778ca0671ee1e49d16c5b41abf = $(`<div id="html_e30382778ca0671ee1e49d16c5b41abf" style="width: 100.0%; height: 100.0%;"><b>14 St Ferry - 14 St & Shipyard Ln</b><br>Departures: 7,914<br>Avg trip: 13.1 min</div>`)[0];
+                popup_8d21ac52be5492dfaac6060f6e99436a.setContent(html_e30382778ca0671ee1e49d16c5b41abf);
+            
+        
+
+        circle_marker_ed5476fae0f597af354a4237a2164f3b.bindPopup(popup_8d21ac52be5492dfaac6060f6e99436a)
+        ;
+
+        
+    
+    
+            var circle_marker_ee958217e9ee7e98feb7995be88741a0 = L.circleMarker(
+                [40.73523762696917, -74.04692771809144],
+                {"bubblingMouseEvents": true, "color": "#cdeaf3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#cdeaf3", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.298815311275781, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_5659c493679cbb91987a821370463dec = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a5f8c6534d4700ec75d0e4d0fee2ae8c = $(`<div id="html_a5f8c6534d4700ec75d0e4d0fee2ae8c" style="width: 100.0%; height: 100.0%;"><b>Hoboken Ave at Monmouth St</b><br>Departures: 7,734<br>Avg trip: 9.6 min</div>`)[0];
+                popup_5659c493679cbb91987a821370463dec.setContent(html_a5f8c6534d4700ec75d0e4d0fee2ae8c);
+            
+        
+
+        circle_marker_ee958217e9ee7e98feb7995be88741a0.bindPopup(popup_5659c493679cbb91987a821370463dec)
+        ;
+
+        
+    
+    
+            var circle_marker_9dce894fce7770162cca37b3fb7defbb = L.circleMarker(
+                [40.74596839068217, -74.0281708769545],
+                {"bubblingMouseEvents": true, "color": "#c9e8f2", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c9e8f2", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.1279558219663, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_af0af41d15e9c456c87a5f3cf2fbd901 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f9157a0e3d96f706e95ecd5262ff4351 = $(`<div id="html_f9157a0e3d96f706e95ecd5262ff4351" style="width: 100.0%; height: 100.0%;"><b>8 St & Washington St</b><br>Departures: 7,553<br>Avg trip: 7.4 min</div>`)[0];
+                popup_af0af41d15e9c456c87a5f3cf2fbd901.setContent(html_f9157a0e3d96f706e95ecd5262ff4351);
+            
+        
+
+        circle_marker_9dce894fce7770162cca37b3fb7defbb.bindPopup(popup_af0af41d15e9c456c87a5f3cf2fbd901)
+        ;
+
+        
+    
+    
+            var circle_marker_a2fec64760ccb3f8f3f2e0d0b5837508 = L.circleMarker(
+                [40.74094247909394, -74.02860328314331],
+                {"bubblingMouseEvents": true, "color": "#c5e6f0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c5e6f0", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.962760183131167, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_eeb3acc5ced8d5d434ecac39d023877d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8127dc5780f305ef34baec11d7b25e78 = $(`<div id="html_8127dc5780f305ef34baec11d7b25e78" style="width: 100.0%; height: 100.0%;"><b>Hudson St & 4 St</b><br>Departures: 7,378<br>Avg trip: 9.6 min</div>`)[0];
+                popup_eeb3acc5ced8d5d434ecac39d023877d.setContent(html_8127dc5780f305ef34baec11d7b25e78);
+            
+        
+
+        circle_marker_a2fec64760ccb3f8f3f2e0d0b5837508.bindPopup(popup_eeb3acc5ced8d5d434ecac39d023877d)
+        ;
+
+        
+    
+    
+            var circle_marker_4560a83f3fe58c5f8302f5cb0585d51c = L.circleMarker(
+                [40.71458700421731, -74.04281365043053],
+                {"bubblingMouseEvents": true, "color": "#c3e5f0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c3e5f0", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.941992731391892, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_86d650023f8d0267243330d9ff021ca8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_650039f362388d36415a85ccad546e8d = $(`<div id="html_650039f362388d36415a85ccad546e8d" style="width: 100.0%; height: 100.0%;"><b>Marin Light Rail</b><br>Departures: 7,356<br>Avg trip: 10.8 min</div>`)[0];
+                popup_86d650023f8d0267243330d9ff021ca8.setContent(html_650039f362388d36415a85ccad546e8d);
+            
+        
+
+        circle_marker_4560a83f3fe58c5f8302f5cb0585d51c.bindPopup(popup_86d650023f8d0267243330d9ff021ca8)
+        ;
+
+        
+    
+    
+            var circle_marker_17b36fdc35969c11a5ab31fcb7b9450e = L.circleMarker(
+                [40.71772849561178, -74.04385020305011],
+                {"bubblingMouseEvents": true, "color": "#c3e5f0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c3e5f0", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.929721055364139, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_4539ff6ccf64068bad24cc39413606c5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3576da8ccc110a72078f9ac0b1c91fd3 = $(`<div id="html_3576da8ccc110a72078f9ac0b1c91fd3" style="width: 100.0%; height: 100.0%;"><b>City Hall</b><br>Departures: 7,343<br>Avg trip: 9.4 min</div>`)[0];
+                popup_4539ff6ccf64068bad24cc39413606c5.setContent(html_3576da8ccc110a72078f9ac0b1c91fd3);
+            
+        
+
+        circle_marker_17b36fdc35969c11a5ab31fcb7b9450e.bindPopup(popup_4539ff6ccf64068bad24cc39413606c5)
+        ;
+
+        
+    
+    
+            var circle_marker_cdd7a938b4030cd56d48668ed6a6c4f0 = L.circleMarker(
+                [40.75060500185264, -74.02408713706309],
+                {"bubblingMouseEvents": true, "color": "#bfe3ef", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bfe3ef", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.759805541133714, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_1f60a6a59447cde3f426373a21113428 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a69d1b235110fca2b2a1dfc46d0ac4a6 = $(`<div id="html_a69d1b235110fca2b2a1dfc46d0ac4a6" style="width: 100.0%; height: 100.0%;"><b>12 St & Sinatra Dr N</b><br>Departures: 7,163<br>Avg trip: 14.0 min</div>`)[0];
+                popup_1f60a6a59447cde3f426373a21113428.setContent(html_a69d1b235110fca2b2a1dfc46d0ac4a6);
+            
+        
+
+        circle_marker_cdd7a938b4030cd56d48668ed6a6c4f0.bindPopup(popup_1f60a6a59447cde3f426373a21113428)
+        ;
+
+        
+    
+    
+            var circle_marker_6a732d1f6faaaa46a6a407452b756a5f = L.circleMarker(
+                [40.71124996571356, -74.05568816211327],
+                {"bubblingMouseEvents": true, "color": "#bbe1ed", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bbe1ed", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.634256855619011, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_179eb3edcc87aeb76d5e21542d227057 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ba3b9c3e41fb3eca5677fe0ce30eb0e5 = $(`<div id="html_ba3b9c3e41fb3eca5677fe0ce30eb0e5" style="width: 100.0%; height: 100.0%;"><b>Liberty Light Rail</b><br>Departures: 7,030<br>Avg trip: 20.0 min</div>`)[0];
+                popup_179eb3edcc87aeb76d5e21542d227057.setContent(html_ba3b9c3e41fb3eca5677fe0ce30eb0e5);
+            
+        
+
+        circle_marker_6a732d1f6faaaa46a6a407452b756a5f.bindPopup(popup_179eb3edcc87aeb76d5e21542d227057)
+        ;
+
+        
+    
+    
+            var circle_marker_4c09b3898651b6bb9ee6871015430583 = L.circleMarker(
+                [40.71926682043742, -74.03423269256395],
+                {"bubblingMouseEvents": true, "color": "#b6dfec", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b6dfec", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.436966064095909, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_fcbcd75b0def57e5f8e0d685d1504606 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7012d7a816188420cffe6b170d71fa8f = $(`<div id="html_7012d7a816188420cffe6b170d71fa8f" style="width: 100.0%; height: 100.0%;"><b>Harborside</b><br>Departures: 6,821<br>Avg trip: 11.7 min</div>`)[0];
+                popup_fcbcd75b0def57e5f8e0d685d1504606.setContent(html_7012d7a816188420cffe6b170d71fa8f);
+            
+        
+
+        circle_marker_4c09b3898651b6bb9ee6871015430583.bindPopup(popup_fcbcd75b0def57e5f8e0d685d1504606)
+        ;
+
+        
+    
+    
+            var circle_marker_b0766689128ae13a45df52be0aa325b5 = L.circleMarker(
+                [40.74541256355253, -74.03333978197611],
+                {"bubblingMouseEvents": true, "color": "#acdae9", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#acdae9", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.018785104073253, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_103e6dc078c2b79145a8857305044928 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e95b59086320ea23611a2d21aad68b88 = $(`<div id="html_e95b59086320ea23611a2d21aad68b88" style="width: 100.0%; height: 100.0%;"><b>Clinton St & 7 St</b><br>Departures: 6,378<br>Avg trip: 6.7 min</div>`)[0];
+                popup_103e6dc078c2b79145a8857305044928.setContent(html_e95b59086320ea23611a2d21aad68b88);
+            
+        
+
+        circle_marker_b0766689128ae13a45df52be0aa325b5.bindPopup(popup_103e6dc078c2b79145a8857305044928)
+        ;
+
+        
+    
+    
+            var circle_marker_2f64021ae5074e866a8fbf91236aec62 = L.circleMarker(
+                [40.721505744114765, -74.04629301016277],
+                {"bubblingMouseEvents": true, "color": "#a6d5e7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a6d5e7", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.799782885731817, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_e35bf6c601428ddadbd164ed0605e599 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4532bc1b2c3d303d18e64425ff4c1908 = $(`<div id="html_4532bc1b2c3d303d18e64425ff4c1908" style="width: 100.0%; height: 100.0%;"><b>Newark Ave</b><br>Departures: 6,146<br>Avg trip: 9.4 min</div>`)[0];
+                popup_e35bf6c601428ddadbd164ed0605e599.setContent(html_4532bc1b2c3d303d18e64425ff4c1908);
+            
+        
+
+        circle_marker_2f64021ae5074e866a8fbf91236aec62.bindPopup(popup_e35bf6c601428ddadbd164ed0605e599)
+        ;
+
+        
+    
+    
+            var circle_marker_1e1c09cbac7ee87848ef0e8e033ca9b7 = L.circleMarker(
+                [40.7481734082674, -74.03246050342787],
+                {"bubblingMouseEvents": true, "color": "#a3d3e6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a3d3e6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.771463633360078, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_527c03d283e66f387e9061c423c1aafe = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9ddc70610d17f642549a72095bf74027 = $(`<div id="html_9ddc70610d17f642549a72095bf74027" style="width: 100.0%; height: 100.0%;"><b>Columbus Park - Clinton St & 9 St</b><br>Departures: 6,116<br>Avg trip: 8.1 min</div>`)[0];
+                popup_527c03d283e66f387e9061c423c1aafe.setContent(html_9ddc70610d17f642549a72095bf74027);
+            
+        
+
+        circle_marker_1e1c09cbac7ee87848ef0e8e033ca9b7.bindPopup(popup_527c03d283e66f387e9061c423c1aafe)
+        ;
+
+        
+    
+    
+            var circle_marker_dd1b9b59a24caf4b767ee929410afd9b = L.circleMarker(
+                [40.73877175170258, -74.03926576190155],
+                {"bubblingMouseEvents": true, "color": "#a3d3e6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a3d3e6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.763911832727615, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_20932712a8d9cc72d4fb711938e66d96 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_69d869d24ee8eb58dc00f4431a4deba7 = $(`<div id="html_69d869d24ee8eb58dc00f4431a4deba7" style="width: 100.0%; height: 100.0%;"><b>Madison St & 1 St</b><br>Departures: 6,108<br>Avg trip: 7.0 min</div>`)[0];
+                popup_20932712a8d9cc72d4fb711938e66d96.setContent(html_69d869d24ee8eb58dc00f4431a4deba7);
+            
+        
+
+        circle_marker_dd1b9b59a24caf4b767ee929410afd9b.bindPopup(popup_20932712a8d9cc72d4fb711938e66d96)
+        ;
+
+        
+    
+    
+            var circle_marker_b7e66f2b11348cbb2f1c8804339bb3bf = L.circleMarker(
+                [40.72429008396635, -74.03549768378345],
+                {"bubblingMouseEvents": true, "color": "#a3d3e6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a3d3e6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.758247982253268, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_d0a99cbd9cad910e44b7398d780700e6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_72b2c54b18fc5f479a4d870fd3b396fd = $(`<div id="html_72b2c54b18fc5f479a4d870fd3b396fd" style="width: 100.0%; height: 100.0%;"><b>Washington St</b><br>Departures: 6,102<br>Avg trip: 10.8 min</div>`)[0];
+                popup_d0a99cbd9cad910e44b7398d780700e6.setContent(html_72b2c54b18fc5f479a4d870fd3b396fd);
+            
+        
+
+        circle_marker_b7e66f2b11348cbb2f1c8804339bb3bf.bindPopup(popup_d0a99cbd9cad910e44b7398d780700e6)
+        ;
+
+        
+    
+    
+            var circle_marker_2ac1a034dec842a41e065c509514c6c8 = L.circleMarker(
+                [40.72111920892998, -74.03804201824912],
+                {"bubblingMouseEvents": true, "color": "#a1d1e5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a1d1e5", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.628923396422334, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_73a4617fae797a396ad08ba479844555 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a0f839950710936f27cbaf4cdea0f17e = $(`<div id="html_a0f839950710936f27cbaf4cdea0f17e" style="width: 100.0%; height: 100.0%;"><b>Warren St</b><br>Departures: 5,965<br>Avg trip: 10.4 min</div>`)[0];
+                popup_73a4617fae797a396ad08ba479844555.setContent(html_a0f839950710936f27cbaf4cdea0f17e);
+            
+        
+
+        circle_marker_2ac1a034dec842a41e065c509514c6c8.bindPopup(popup_73a4617fae797a396ad08ba479844555)
+        ;
+
+        
+    
+    
+            var circle_marker_030f45eb31e1fedfbd61542646df6d61 = L.circleMarker(
+                [40.74264458496115, -74.03226279266435],
+                {"bubblingMouseEvents": true, "color": "#9bcce2", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9bcce2", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.444848256006042, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_cc9621ff64506f3a5db3a6031b42d6a1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3010c4c4f6de21eb6194b3fdb4a7d266 = $(`<div id="html_3010c4c4f6de21eb6194b3fdb4a7d266" style="width: 100.0%; height: 100.0%;"><b>Church Sq Park - 5 St & Park Ave</b><br>Departures: 5,770<br>Avg trip: 8.1 min</div>`)[0];
+                popup_cc9621ff64506f3a5db3a6031b42d6a1.setContent(html_3010c4c4f6de21eb6194b3fdb4a7d266);
+            
+        
+
+        circle_marker_030f45eb31e1fedfbd61542646df6d61.bindPopup(popup_cc9621ff64506f3a5db3a6031b42d6a1)
+        ;
+
+        
+    
+    
+            var circle_marker_b3b1c2b95eac46d2a977be0bd55088ce = L.circleMarker(
+                [40.74793958370913, -74.0384139951691],
+                {"bubblingMouseEvents": true, "color": "#9bcce2", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9bcce2", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.437296455373577, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_b06df736e28f804cf239df6759304826 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d18186a7331ea3481f71bde5ae61984e = $(`<div id="html_d18186a7331ea3481f71bde5ae61984e" style="width: 100.0%; height: 100.0%;"><b>9 St HBLR - Jackson St & 8 St</b><br>Departures: 5,762<br>Avg trip: 8.7 min</div>`)[0];
+                popup_b06df736e28f804cf239df6759304826.setContent(html_d18186a7331ea3481f71bde5ae61984e);
+            
+        
+
+        circle_marker_b3b1c2b95eac46d2a977be0bd55088ce.bindPopup(popup_b06df736e28f804cf239df6759304826)
+        ;
+
+        
+    
+    
+            var circle_marker_ea87e2fbf8e004cf3b9ade2c711afb41 = L.circleMarker(
+                [40.72166456225451, -74.04288557472378],
+                {"bubblingMouseEvents": true, "color": "#9bcce2", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9bcce2", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.434464530136404, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_0208774dd5d28e9f63dda17cb6273bec = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7b486da5f2d3a338a0d71e4fa0d68cce = $(`<div id="html_7b486da5f2d3a338a0d71e4fa0d68cce" style="width: 100.0%; height: 100.0%;"><b>Manila & 1st</b><br>Departures: 5,759<br>Avg trip: 8.0 min</div>`)[0];
+                popup_0208774dd5d28e9f63dda17cb6273bec.setContent(html_7b486da5f2d3a338a0d71e4fa0d68cce);
+            
+        
+
+        circle_marker_ea87e2fbf8e004cf3b9ade2c711afb41.bindPopup(popup_0208774dd5d28e9f63dda17cb6273bec)
+        ;
+
+        
+    
+    
+            var circle_marker_155b10dbd2f8b6487c5b0415f5ee78e6 = L.circleMarker(
+                [40.71847983261874, -74.04773448016611],
+                {"bubblingMouseEvents": true, "color": "#9bcce2", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9bcce2", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.421248879029594, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_a13faa9382bea5328e9b5328fc621f61 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_326cad2b414dfe624ee6f70bca4023bd = $(`<div id="html_326cad2b414dfe624ee6f70bca4023bd" style="width: 100.0%; height: 100.0%;"><b>Van Vorst Park</b><br>Departures: 5,745<br>Avg trip: 10.2 min</div>`)[0];
+                popup_a13faa9382bea5328e9b5328fc621f61.setContent(html_326cad2b414dfe624ee6f70bca4023bd);
+            
+        
+
+        circle_marker_155b10dbd2f8b6487c5b0415f5ee78e6.bindPopup(popup_a13faa9382bea5328e9b5328fc621f61)
+        ;
+
+        
+    
+    
+            var circle_marker_45dd6920798f82163a74b835322d2c00 = L.circleMarker(
+                [40.71843727879114, -74.03888281794927],
+                {"bubblingMouseEvents": true, "color": "#99cae1", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99cae1", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.374050125076698, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_62ccef9dbfc270ba331119bb88b6340d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5f9e4fd0169edc85ae9d7baa9028bef6 = $(`<div id="html_5f9e4fd0169edc85ae9d7baa9028bef6" style="width: 100.0%; height: 100.0%;"><b>Columbus Drive</b><br>Departures: 5,695<br>Avg trip: 10.8 min</div>`)[0];
+                popup_62ccef9dbfc270ba331119bb88b6340d.setContent(html_5f9e4fd0169edc85ae9d7baa9028bef6);
+            
+        
+
+        circle_marker_45dd6920798f82163a74b835322d2c00.bindPopup(popup_62ccef9dbfc270ba331119bb88b6340d)
+        ;
+
+        
+    
+    
+            var circle_marker_389df20e6f22c89293cf99a7e2a2f731 = L.circleMarker(
+                [40.7464054774872, -74.03804811265091],
+                {"bubblingMouseEvents": true, "color": "#94c7df", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#94c7df", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.223014112427432, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_93ca9d1fcd9c8f87c4d22b15c657bbfd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e7b6e5fa88d65746c1b339eb02eff7dc = $(`<div id="html_e7b6e5fa88d65746c1b339eb02eff7dc" style="width: 100.0%; height: 100.0%;"><b>7 St & Monroe St</b><br>Departures: 5,535<br>Avg trip: 7.8 min</div>`)[0];
+                popup_93ca9d1fcd9c8f87c4d22b15c657bbfd.setContent(html_e7b6e5fa88d65746c1b339eb02eff7dc);
+            
+        
+
+        circle_marker_389df20e6f22c89293cf99a7e2a2f731.bindPopup(popup_93ca9d1fcd9c8f87c4d22b15c657bbfd)
+        ;
+
+        
+    
+    
+            var circle_marker_c4300eed350cf5da0a78f1b011444ef2 = L.circleMarker(
+                [40.7374446542888, -74.03570020224855],
+                {"bubblingMouseEvents": true, "color": "#94c7df", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#94c7df", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.190918959739463, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_d9ab83bbf3026e18d1d179946e195232 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_caa4b97ae609b7cc90e0f2cf4245057f = $(`<div id="html_caa4b97ae609b7cc90e0f2cf4245057f" style="width: 100.0%; height: 100.0%;"><b>Clinton St & Newark St</b><br>Departures: 5,501<br>Avg trip: 8.1 min</div>`)[0];
+                popup_d9ab83bbf3026e18d1d179946e195232.setContent(html_caa4b97ae609b7cc90e0f2cf4245057f);
+            
+        
+
+        circle_marker_c4300eed350cf5da0a78f1b011444ef2.bindPopup(popup_d9ab83bbf3026e18d1d179946e195232)
+        ;
+
+        
+    
+    
+            var circle_marker_78b08f4b8cbc09984f3c4b725cbeb042 = L.circleMarker(
+                [40.75404604181962, -74.03159871313072],
+                {"bubblingMouseEvents": true, "color": "#92c5de", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#92c5de", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.137112380233162, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_9ff89fa5cf6524b0f56bbc4b6637837e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_de5064a0d576c778d1570dca4c356205 = $(`<div id="html_de5064a0d576c778d1570dca4c356205" style="width: 100.0%; height: 100.0%;"><b>Grand St & 14 St</b><br>Departures: 5,444<br>Avg trip: 9.7 min</div>`)[0];
+                popup_9ff89fa5cf6524b0f56bbc4b6637837e.setContent(html_de5064a0d576c778d1570dca4c356205);
+            
+        
+
+        circle_marker_78b08f4b8cbc09984f3c4b725cbeb042.bindPopup(popup_9ff89fa5cf6524b0f56bbc4b6637837e)
+        ;
+
+        
+    
+    
+            var circle_marker_3990db419a2f6c90180d301246023059 = L.circleMarker(
+                [40.73979149870257, -74.03688462395998],
+                {"bubblingMouseEvents": true, "color": "#8ec2dc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8ec2dc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.935101713314769, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_5b59736f26727079a3d035d41fe6bcee = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d3b54eb6a6972c204a227094a67b3cc0 = $(`<div id="html_d3b54eb6a6972c204a227094a67b3cc0" style="width: 100.0%; height: 100.0%;"><b>Adams St & 2 St</b><br>Departures: 5,230<br>Avg trip: 7.4 min</div>`)[0];
+                popup_5b59736f26727079a3d035d41fe6bcee.setContent(html_d3b54eb6a6972c204a227094a67b3cc0);
+            
+        
+
+        circle_marker_3990db419a2f6c90180d301246023059.bindPopup(popup_5b59736f26727079a3d035d41fe6bcee)
+        ;
+
+        
+    
+    
+            var circle_marker_eaa2c4ab807c39bc41cfd51812718063 = L.circleMarker(
+                [40.71638962580298, -74.03438313530633],
+                {"bubblingMouseEvents": true, "color": "#8cc0db", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8cc0db", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.875631283334119, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_272b9788525a646b83f02be412c4208f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_701e128c4af8640b55d75c8f4d98e0e6 = $(`<div id="html_701e128c4af8640b55d75c8f4d98e0e6" style="width: 100.0%; height: 100.0%;"><b>Exchange Pl</b><br>Departures: 5,167<br>Avg trip: 11.6 min</div>`)[0];
+                popup_272b9788525a646b83f02be412c4208f.setContent(html_701e128c4af8640b55d75c8f4d98e0e6);
+            
+        
+
+        circle_marker_eaa2c4ab807c39bc41cfd51812718063.bindPopup(popup_272b9788525a646b83f02be412c4208f)
+        ;
+
+        
+    
+    
+            var circle_marker_c3d64322c73bb326f328df0ee215d6c7 = L.circleMarker(
+                [40.73757421606019, -74.04165840167695],
+                {"bubblingMouseEvents": true, "color": "#8cc0db", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8cc0db", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.8671355076226, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_bcccfaeaf27f7663e0970faa29c1293d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_85885bd32125744b4ef3c7b83922d358 = $(`<div id="html_85885bd32125744b4ef3c7b83922d358" style="width: 100.0%; height: 100.0%;"><b>Southwest Park - Jackson St & Observer Hwy</b><br>Departures: 5,158<br>Avg trip: 8.8 min</div>`)[0];
+                popup_bcccfaeaf27f7663e0970faa29c1293d.setContent(html_85885bd32125744b4ef3c7b83922d358);
+            
+        
+
+        circle_marker_c3d64322c73bb326f328df0ee215d6c7.bindPopup(popup_bcccfaeaf27f7663e0970faa29c1293d)
+        ;
+
+        
+    
+    
+            var circle_marker_0387b7a8977ba03d9b78c0064c82650c = L.circleMarker(
+                [40.7544658650584, -74.02659195784655],
+                {"bubblingMouseEvents": true, "color": "#8abeda", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8abeda", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.831264454618399, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_40c323c3a4f15b7e03b68a0aac12d7f3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cfc71edd6d529890d830853fb782e00a = $(`<div id="html_cfc71edd6d529890d830853fb782e00a" style="width: 100.0%; height: 100.0%;"><b>Bloomfield St & 15 St</b><br>Departures: 5,120<br>Avg trip: 13.7 min</div>`)[0];
+                popup_40c323c3a4f15b7e03b68a0aac12d7f3.setContent(html_cfc71edd6d529890d830853fb782e00a);
+            
+        
+
+        circle_marker_0387b7a8977ba03d9b78c0064c82650c.bindPopup(popup_40c323c3a4f15b7e03b68a0aac12d7f3)
+        ;
+
+        
+    
+    
+            var circle_marker_9db17704a55921775a96d3dc63b42333 = L.circleMarker(
+                [40.71515155252953, -74.03768631128004],
+                {"bubblingMouseEvents": true, "color": "#87bdd9", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#87bdd9", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.705715769103696, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_3457e06a3f3c145650754e6135e79675 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c1aee1879893f23bcfc60f694236a3c3 = $(`<div id="html_c1aee1879893f23bcfc60f694236a3c3" style="width: 100.0%; height: 100.0%;"><b>Grand St</b><br>Departures: 4,987<br>Avg trip: 10.0 min</div>`)[0];
+                popup_3457e06a3f3c145650754e6135e79675.setContent(html_c1aee1879893f23bcfc60f694236a3c3);
+            
+        
+
+        circle_marker_9db17704a55921775a96d3dc63b42333.bindPopup(popup_3457e06a3f3c145650754e6135e79675)
+        ;
+
+        
+    
+    
+            var circle_marker_d87305e4b0b5d9d14d58fc452084eb98 = L.circleMarker(
+                [40.71540394941782, -74.0496919534065],
+                {"bubblingMouseEvents": true, "color": "#87bdd9", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#87bdd9", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.694388068155, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_c81616510a5dcfc543b4903f5cf24dc3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4233378119a906f05274f4e77a2ea4fe = $(`<div id="html_4233378119a906f05274f4e77a2ea4fe" style="width: 100.0%; height: 100.0%;"><b>JC Medical Center</b><br>Departures: 4,975<br>Avg trip: 15.2 min</div>`)[0];
+                popup_c81616510a5dcfc543b4903f5cf24dc3.setContent(html_4233378119a906f05274f4e77a2ea4fe);
+            
+        
+
+        circle_marker_d87305e4b0b5d9d14d58fc452084eb98.bindPopup(popup_c81616510a5dcfc543b4903f5cf24dc3)
+        ;
+
+        
+    
+    
+            var circle_marker_9a3b4a62b8c6ee761fdbc328d52a96fc = L.circleMarker(
+                [40.7407460812771, -74.0425612868338],
+                {"bubblingMouseEvents": true, "color": "#85bbd9", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#85bbd9", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.636805588332468, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_b8bbc81b1672226c3f90e202c6274bbb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6adc98b8a2c67c0aa1c778db62ba2384 = $(`<div id="html_6adc98b8a2c67c0aa1c778db62ba2384" style="width: 100.0%; height: 100.0%;"><b>Marshall St & 2 St</b><br>Departures: 4,914<br>Avg trip: 8.5 min</div>`)[0];
+                popup_b8bbc81b1672226c3f90e202c6274bbb.setContent(html_6adc98b8a2c67c0aa1c778db62ba2384);
+            
+        
+
+        circle_marker_9a3b4a62b8c6ee761fdbc328d52a96fc.bindPopup(popup_b8bbc81b1672226c3f90e202c6274bbb)
+        ;
+
+        
+    
+    
+            var circle_marker_81cc21f6f4bb09c6aa80adf3817cfdc2 = L.circleMarker(
+                [40.72538557763989, -74.0675663827704],
+                {"bubblingMouseEvents": true, "color": "#7fb6d6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7fb6d6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.42346722046538, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_553e0b8c6a91b790c949b2a512f15f21 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2b60a8a4e89c281de9cd7138be9e7a53 = $(`<div id="html_2b60a8a4e89c281de9cd7138be9e7a53" style="width: 100.0%; height: 100.0%;"><b>McGinley Square</b><br>Departures: 4,688<br>Avg trip: 8.2 min</div>`)[0];
+                popup_553e0b8c6a91b790c949b2a512f15f21.setContent(html_2b60a8a4e89c281de9cd7138be9e7a53);
+            
+        
+
+        circle_marker_81cc21f6f4bb09c6aa80adf3817cfdc2.bindPopup(popup_553e0b8c6a91b790c949b2a512f15f21)
+        ;
+
+        
+    
+    
+            var circle_marker_41307dcf9d7c0de2bb5137f5d735b282 = L.circleMarker(
+                [40.74314402326708, -74.02699508153093],
+                {"bubblingMouseEvents": true, "color": "#7db4d5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7db4d5", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.348893189219805, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_0f9ce99148c1d8291620b4f60d23f170 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ccc85f932813f0945c52b0bb3b347ae2 = $(`<div id="html_ccc85f932813f0945c52b0bb3b347ae2" style="width: 100.0%; height: 100.0%;"><b>Stevens - River Ter & 6 St</b><br>Departures: 4,609<br>Avg trip: 9.6 min</div>`)[0];
+                popup_0f9ce99148c1d8291620b4f60d23f170.setContent(html_ccc85f932813f0945c52b0bb3b347ae2);
+            
+        
+
+        circle_marker_41307dcf9d7c0de2bb5137f5d735b282.bindPopup(popup_0f9ce99148c1d8291620b4f60d23f170)
+        ;
+
+        
+    
+    
+            var circle_marker_bbe36b16c1490e1e590638432ea73d0b = L.circleMarker(
+                [40.71415010576416, -74.03355541958332],
+                {"bubblingMouseEvents": true, "color": "#7db4d5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7db4d5", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.335677538112993, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_01f5f44bfde92ac3441530a5377e0297 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6ad3d9046147976f420bd24865917704 = $(`<div id="html_6ad3d9046147976f420bd24865917704" style="width: 100.0%; height: 100.0%;"><b>Paulus Hook</b><br>Departures: 4,595<br>Avg trip: 12.1 min</div>`)[0];
+                popup_01f5f44bfde92ac3441530a5377e0297.setContent(html_6ad3d9046147976f420bd24865917704);
+            
+        
+
+        circle_marker_bbe36b16c1490e1e590638432ea73d0b.bindPopup(popup_01f5f44bfde92ac3441530a5377e0297)
+        ;
+
+        
+    
+    
+            var circle_marker_b4da30bafc31f30e228d7b6e6c70b34e = L.circleMarker(
+                [40.75187260172156, -74.0303796482302],
+                {"bubblingMouseEvents": true, "color": "#7db4d5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7db4d5", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.333789587954879, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_2d960b2f9f23419d957d8caf046acc0e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fb3b605025aa41d0d990011e34f100fe = $(`<div id="html_fb3b605025aa41d0d990011e34f100fe" style="width: 100.0%; height: 100.0%;"><b>Willow Ave & 12 St</b><br>Departures: 4,593<br>Avg trip: 9.1 min</div>`)[0];
+                popup_2d960b2f9f23419d957d8caf046acc0e.setContent(html_fb3b605025aa41d0d990011e34f100fe);
+            
+        
+
+        circle_marker_b4da30bafc31f30e228d7b6e6c70b34e.bindPopup(popup_2d960b2f9f23419d957d8caf046acc0e)
+        ;
+
+        
+    
+    
+            var circle_marker_51d58ac2d6ed78f8dde80a07c263acbc = L.circleMarker(
+                [40.71238865713999, -74.03844883749251],
+                {"bubblingMouseEvents": true, "color": "#7db4d5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7db4d5", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.323405862085242, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_f989a8d3d86fc2dceb9064cafee7811d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_18e7febdb4c3a342a07a68a0b036d837 = $(`<div id="html_18e7febdb4c3a342a07a68a0b036d837" style="width: 100.0%; height: 100.0%;"><b>Morris Canal</b><br>Departures: 4,582<br>Avg trip: 11.2 min</div>`)[0];
+                popup_f989a8d3d86fc2dceb9064cafee7811d.setContent(html_18e7febdb4c3a342a07a68a0b036d837);
+            
+        
+
+        circle_marker_51d58ac2d6ed78f8dde80a07c263acbc.bindPopup(popup_f989a8d3d86fc2dceb9064cafee7811d)
+        ;
+
+        
+    
+    
+            var circle_marker_6b53238adc9fb90c3bd47264fb898d10 = L.circleMarker(
+                [40.74995911975563, -74.03587299907886],
+                {"bubblingMouseEvents": true, "color": "#7db4d5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7db4d5", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.323405862085242, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_46ac2c8b39a9623c374440e37243c7ed = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_691a739c247146178e8209ad72feb436 = $(`<div id="html_691a739c247146178e8209ad72feb436" style="width: 100.0%; height: 100.0%;"><b>Madison St & 10 St</b><br>Departures: 4,582<br>Avg trip: 8.0 min</div>`)[0];
+                popup_46ac2c8b39a9623c374440e37243c7ed.setContent(html_691a739c247146178e8209ad72feb436);
+            
+        
+
+        circle_marker_6b53238adc9fb90c3bd47264fb898d10.bindPopup(popup_46ac2c8b39a9623c374440e37243c7ed)
+        ;
+
+        
+    
+    
+            var circle_marker_d7ba39667ba57c7ee559efa2c37c2a74 = L.circleMarker(
+                [40.74226477615149, -74.0350789838607],
+                {"bubblingMouseEvents": true, "color": "#7db4d5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7db4d5", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.312078161136547, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_72e7ba9e28538e30a92f7204640b89a2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b9ce4631ec826bd92dfe8891b9a217a6 = $(`<div id="html_b9ce4631ec826bd92dfe8891b9a217a6" style="width: 100.0%; height: 100.0%;"><b>4 St & Grand St</b><br>Departures: 4,570<br>Avg trip: 6.8 min</div>`)[0];
+                popup_72e7ba9e28538e30a92f7204640b89a2.setContent(html_b9ce4631ec826bd92dfe8891b9a217a6);
+            
+        
+
+        circle_marker_d7ba39667ba57c7ee559efa2c37c2a74.bindPopup(popup_72e7ba9e28538e30a92f7204640b89a2)
+        ;
+
+        
+    
+    
+            var circle_marker_3f1c4afa17b22142f8288b76dedaec62 = L.circleMarker(
+                [40.72604885485587, -74.05037901235455],
+                {"bubblingMouseEvents": true, "color": "#7db4d5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7db4d5", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.299806485108792, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_9cb359629b90e806d8e914992a435bb0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ad8ae8effede47cb1012bbb750810558 = $(`<div id="html_ad8ae8effede47cb1012bbb750810558" style="width: 100.0%; height: 100.0%;"><b>Brunswick & 6th</b><br>Departures: 4,557<br>Avg trip: 8.0 min</div>`)[0];
+                popup_9cb359629b90e806d8e914992a435bb0.setContent(html_ad8ae8effede47cb1012bbb750810558);
+            
+        
+
+        circle_marker_3f1c4afa17b22142f8288b76dedaec62.bindPopup(popup_9cb359629b90e806d8e914992a435bb0)
+        ;
+
+        
+    
+    
+            var circle_marker_7b7bab44f000c1079e5ca22e5c0d41e0 = L.circleMarker(
+                [40.72413870154316, -74.05067535649658],
+                {"bubblingMouseEvents": true, "color": "#72abd0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#72abd0", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.957143531410772, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_9e5c91de8b6a0a0ec821b2e253436b01 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9db380aa8af37224d2adb67b07548fd7 = $(`<div id="html_9db380aa8af37224d2adb67b07548fd7" style="width: 100.0%; height: 100.0%;"><b>Brunswick St</b><br>Departures: 4,194<br>Avg trip: 8.4 min</div>`)[0];
+                popup_9e5c91de8b6a0a0ec821b2e253436b01.setContent(html_9db380aa8af37224d2adb67b07548fd7);
+            
+        
+
+        circle_marker_7b7bab44f000c1079e5ca22e5c0d41e0.bindPopup(popup_9e5c91de8b6a0a0ec821b2e253436b01)
+        ;
+
+        
+    
+    
+            var circle_marker_366361d42d6cc30051dd120221b67e51 = L.circleMarker(
+                [40.72332488191328, -74.04589669144637],
+                {"bubblingMouseEvents": true, "color": "#70a9cf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#70a9cf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.83065087081701, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_f2f9f0b6a2e99829d6bbe1d2e0068182 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_563120506802f48d9df7256e56f8007f = $(`<div id="html_563120506802f48d9df7256e56f8007f" style="width: 100.0%; height: 100.0%;"><b>Jersey & 3rd</b><br>Departures: 4,060<br>Avg trip: 6.9 min</div>`)[0];
+                popup_f2f9f0b6a2e99829d6bbe1d2e0068182.setContent(html_563120506802f48d9df7256e56f8007f);
+            
+        
+
+        circle_marker_366361d42d6cc30051dd120221b67e51.bindPopup(popup_f2f9f0b6a2e99829d6bbe1d2e0068182)
+        ;
+
+        
+    
+    
+            var circle_marker_1d52776fa69fc935e06a649e1f82f560 = L.circleMarker(
+                [40.73369112350042, -74.06247617632664],
+                {"bubblingMouseEvents": true, "color": "#6da4cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6da4cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.713597961013829, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_5f04dc01c85f375fe42c1717a3347f40 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6fe280c06dc340384fe43c009738185e = $(`<div id="html_6fe280c06dc340384fe43c009738185e" style="width: 100.0%; height: 100.0%;"><b>Journal Square</b><br>Departures: 3,936<br>Avg trip: 9.3 min</div>`)[0];
+                popup_5f04dc01c85f375fe42c1717a3347f40.setContent(html_6fe280c06dc340384fe43c009738185e);
+            
+        
+
+        circle_marker_1d52776fa69fc935e06a649e1f82f560.bindPopup(popup_5f04dc01c85f375fe42c1717a3347f40)
+        ;
+
+        
+    
+    
+            var circle_marker_713e47c54f0b58001b024966d0474e9a = L.circleMarker(
+                [40.74435428879027, -74.03448108494945],
+                {"bubblingMouseEvents": true, "color": "#6da4cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6da4cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.697550384669846, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_8de9c990eb84a8368ef2108d4640ab05 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e334d968bc9a42f18b584a390eddcd00 = $(`<div id="html_e334d968bc9a42f18b584a390eddcd00" style="width: 100.0%; height: 100.0%;"><b>6 St & Grand St</b><br>Departures: 3,919<br>Avg trip: 7.1 min</div>`)[0];
+                popup_8de9c990eb84a8368ef2108d4640ab05.setContent(html_e334d968bc9a42f18b584a390eddcd00);
+            
+        
+
+        circle_marker_713e47c54f0b58001b024966d0474e9a.bindPopup(popup_8de9c990eb84a8368ef2108d4640ab05)
+        ;
+
+        
+    
+    
+            var circle_marker_54f704cc1a4802b9bbc63fbef58489a8 = L.circleMarker(
+                [40.71348663553362, -74.0628271731608],
+                {"bubblingMouseEvents": true, "color": "#659bc8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#659bc8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.36904705715769, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_a423e82cbafce8ab56524091a31258a1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_203b76695b824d7a43a9589294bf5626 = $(`<div id="html_203b76695b824d7a43a9589294bf5626" style="width: 100.0%; height: 100.0%;"><b>Lafayette Park</b><br>Departures: 3,571<br>Avg trip: 10.7 min</div>`)[0];
+                popup_a423e82cbafce8ab56524091a31258a1.setContent(html_203b76695b824d7a43a9589294bf5626);
+            
+        
+
+        circle_marker_54f704cc1a4802b9bbc63fbef58489a8.bindPopup(popup_a423e82cbafce8ab56524091a31258a1)
+        ;
+
+        
+    
+    
+            var circle_marker_d4d8c73e2cbd32b48e32f8cb15c48a3c = L.circleMarker(
+                [40.72360423758282, -74.06420843617266],
+                {"bubblingMouseEvents": true, "color": "#6297c6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6297c6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.221786944824657, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_4f7c834ffd1cc452e60f230c88b59486 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7b844a74879e34c26bc226f9f57f583e = $(`<div id="html_7b844a74879e34c26bc226f9f57f583e" style="width: 100.0%; height: 100.0%;"><b>Baldwin at Montgomery</b><br>Departures: 3,415<br>Avg trip: 10.2 min</div>`)[0];
+                popup_4f7c834ffd1cc452e60f230c88b59486.setContent(html_7b844a74879e34c26bc226f9f57f583e);
+            
+        
+
+        circle_marker_d4d8c73e2cbd32b48e32f8cb15c48a3c.bindPopup(popup_4f7c834ffd1cc452e60f230c88b59486)
+        ;
+
+        
+    
+    
+            var circle_marker_18b7938993a7316269a31a099c5212f2 = L.circleMarker(
+                [40.72163628188546, -74.04998894075412],
+                {"bubblingMouseEvents": true, "color": "#5c90c2", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5c90c2", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.022608203143438, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_80a588122db9305d5b1ff7a8f3a9b6f9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1205c8138c8e04d3b0309c5ea1a240a2 = $(`<div id="html_1205c8138c8e04d3b0309c5ea1a240a2" style="width: 100.0%; height: 100.0%;"><b>Dixon Mills</b><br>Departures: 3,204<br>Avg trip: 7.1 min</div>`)[0];
+                popup_80a588122db9305d5b1ff7a8f3a9b6f9.setContent(html_1205c8138c8e04d3b0309c5ea1a240a2);
+            
+        
+
+        circle_marker_18b7938993a7316269a31a099c5212f2.bindPopup(popup_80a588122db9305d5b1ff7a8f3a9b6f9)
+        ;
+
+        
+    
+    
+            var circle_marker_0ff37098f6ded0a992d795c2fa33b1f5 = L.circleMarker(
+                [40.73915225446556, -74.03307703446173],
+                {"bubblingMouseEvents": true, "color": "#5a8ec1", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5a8ec1", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.923490819842356, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_3892c1bde24f930df9e4b47b00b26162 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a0303616537dd061993e55285e0815d6 = $(`<div id="html_a0303616537dd061993e55285e0815d6" style="width: 100.0%; height: 100.0%;"><b>2 St & Park Ave</b><br>Departures: 3,099<br>Avg trip: 8.5 min</div>`)[0];
+                popup_3892c1bde24f930df9e4b47b00b26162.setContent(html_a0303616537dd061993e55285e0815d6);
+            
+        
+
+        circle_marker_0ff37098f6ded0a992d795c2fa33b1f5.bindPopup(popup_3892c1bde24f930df9e4b47b00b26162)
+        ;
+
+        
+    
+    
+            var circle_marker_1709331dc2074bfdcb8a14854e140916 = L.circleMarker(
+                [40.72528569981808, -74.04555675646965],
+                {"bubblingMouseEvents": true, "color": "#5a8ec1", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5a8ec1", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.898003492707792, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_bfa4e918a29b205c5668bf353f2f43b6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4ea2578fea4955030b426dc603873442 = $(`<div id="html_4ea2578fea4955030b426dc603873442" style="width: 100.0%; height: 100.0%;"><b>Jersey & 6th St</b><br>Departures: 3,072<br>Avg trip: 7.0 min</div>`)[0];
+                popup_bfa4e918a29b205c5668bf353f2f43b6.setContent(html_4ea2578fea4955030b426dc603873442);
+            
+        
+
+        circle_marker_1709331dc2074bfdcb8a14854e140916.bindPopup(popup_bfa4e918a29b205c5668bf353f2f43b6)
+        ;
+
+        
+    
+    
+            var circle_marker_69cbd6ff367e97732ca9911b848268e0 = L.circleMarker(
+                [40.725656197486096, -74.04880766548337],
+                {"bubblingMouseEvents": true, "color": "#588cc0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#588cc0", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.843252938122434, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_7cb4b599cdb416f98e64b2a6883d8360 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5a016f81dd123ec653a59a245b7827fb = $(`<div id="html_5a016f81dd123ec653a59a245b7827fb" style="width: 100.0%; height: 100.0%;"><b>Monmouth and 6th</b><br>Departures: 3,014<br>Avg trip: 7.2 min</div>`)[0];
+                popup_7cb4b599cdb416f98e64b2a6883d8360.setContent(html_5a016f81dd123ec653a59a245b7827fb);
+            
+        
+
+        circle_marker_69cbd6ff367e97732ca9911b848268e0.bindPopup(popup_7cb4b599cdb416f98e64b2a6883d8360)
+        ;
+
+        
+    
+    
+            var circle_marker_cac5fe49d0be1bc0fd23af21f610a169 = L.circleMarker(
+                [40.73115697297089, -74.05752789147532],
+                {"bubblingMouseEvents": true, "color": "#588cc0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#588cc0", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.841364987964318, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_fc9a84a5ee88e9fee14734619e1ca3ab = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_20c633837b98d47a405129adc09b714d = $(`<div id="html_20c633837b98d47a405129adc09b714d" style="width: 100.0%; height: 100.0%;"><b>Hilltop</b><br>Departures: 3,012<br>Avg trip: 10.9 min</div>`)[0];
+                popup_fc9a84a5ee88e9fee14734619e1ca3ab.setContent(html_20c633837b98d47a405129adc09b714d);
+            
+        
+
+        circle_marker_cac5fe49d0be1bc0fd23af21f610a169.bindPopup(popup_fc9a84a5ee88e9fee14734619e1ca3ab)
+        ;
+
+        
+    
+    
+            var circle_marker_13f028d5a7ec622e7b886b8dd709b009 = L.circleMarker(
+                [40.71943493675919, -74.05098961490901],
+                {"bubblingMouseEvents": true, "color": "#588cc0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#588cc0", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.837589087648086, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_280b027bdc75a4150316df83a73fd4de = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e0bf0c37f3654ffd16a47136c138e8f2 = $(`<div id="html_e0bf0c37f3654ffd16a47136c138e8f2" style="width: 100.0%; height: 100.0%;"><b>Montgomery St</b><br>Departures: 3,008<br>Avg trip: 10.2 min</div>`)[0];
+                popup_280b027bdc75a4150316df83a73fd4de.setContent(html_e0bf0c37f3654ffd16a47136c138e8f2);
+            
+        
+
+        circle_marker_13f028d5a7ec622e7b886b8dd709b009.bindPopup(popup_280b027bdc75a4150316df83a73fd4de)
+        ;
+
+        
+    
+    
+            var circle_marker_c0e941dd2ce72fc9e40df299a3154391 = L.circleMarker(
+                [40.74263803834332, -74.05181295261148],
+                {"bubblingMouseEvents": true, "color": "#588cc0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#588cc0", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.8319252371737385, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_f46cfdbc49f2e6c1dae838d04f635127 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8576529d15e2c8aba6ceaa45f9d86781 = $(`<div id="html_8576529d15e2c8aba6ceaa45f9d86781" style="width: 100.0%; height: 100.0%;"><b>Pershing Field</b><br>Departures: 3,002<br>Avg trip: 13.0 min</div>`)[0];
+                popup_f46cfdbc49f2e6c1dae838d04f635127.setContent(html_8576529d15e2c8aba6ceaa45f9d86781);
+            
+        
+
+        circle_marker_c0e941dd2ce72fc9e40df299a3154391.bindPopup(popup_f46cfdbc49f2e6c1dae838d04f635127)
+        ;
+
+        
+    
+    
+            var circle_marker_b0f881393a8d476212d43a3042277ada = L.circleMarker(
+                [40.74448354983445, -74.04390427976968],
+                {"bubblingMouseEvents": true, "color": "#578abf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#578abf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.811157785434464, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_f82e7e06735d3cc9a22acd8540a6537d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a294c6cf5a36cc9062814da530d2a7b9 = $(`<div id="html_a294c6cf5a36cc9062814da530d2a7b9" style="width: 100.0%; height: 100.0%;"><b>Riverview Park</b><br>Departures: 2,980<br>Avg trip: 11.9 min</div>`)[0];
+                popup_f82e7e06735d3cc9a22acd8540a6537d.setContent(html_a294c6cf5a36cc9062814da530d2a7b9);
+            
+        
+
+        circle_marker_b0f881393a8d476212d43a3042277ada.bindPopup(popup_f82e7e06735d3cc9a22acd8540a6537d)
+        ;
+
+        
+    
+    
+            var circle_marker_2c60aac8cb74e2f7d64c64f751e49974 = L.circleMarker(
+                [40.75082361590006, -74.03357841745935],
+                {"bubblingMouseEvents": true, "color": "#5588be", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5588be", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.679945249445415, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_ceee711151161d9b67422633f7f7c6ff = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6451cc50064dd3db39b3d393e8adf835 = $(`<div id="html_6451cc50064dd3db39b3d393e8adf835" style="width: 100.0%; height: 100.0%;"><b>Adams St & 11 St</b><br>Departures: 2,841<br>Avg trip: 9.1 min</div>`)[0];
+                popup_ceee711151161d9b67422633f7f7c6ff.setContent(html_6451cc50064dd3db39b3d393e8adf835);
+            
+        
+
+        circle_marker_2c60aac8cb74e2f7d64c64f751e49974.bindPopup(popup_ceee711151161d9b67422633f7f7c6ff)
+        ;
+
+        
+    
+    
+            var circle_marker_273437319a8f6ca4701b7d04425f6d2f = L.circleMarker(
+                [40.73758136251011, -74.05244146011343],
+                {"bubblingMouseEvents": true, "color": "#5588be", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5588be", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.675225374050125, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_13ed008091472ed8f1c57ab1782ed2a4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9f6953aa115ddab5542347ae69144cb5 = $(`<div id="html_9f6953aa115ddab5542347ae69144cb5" style="width: 100.0%; height: 100.0%;"><b>Oakland Ave</b><br>Departures: 2,836<br>Avg trip: 9.8 min</div>`)[0];
+                popup_13ed008091472ed8f1c57ab1782ed2a4.setContent(html_9f6953aa115ddab5542347ae69144cb5);
+            
+        
+
+        circle_marker_273437319a8f6ca4701b7d04425f6d2f.bindPopup(popup_13ed008091472ed8f1c57ab1782ed2a4)
+        ;
+
+        
+    
+    
+            var circle_marker_5986074727b1215b3525db0a02d9e8ed = L.circleMarker(
+                [40.74314140425482, -74.0400645349518],
+                {"bubblingMouseEvents": true, "color": "#5385bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5385bd", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.643130221362156, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_913a449a45e195b5516891f4eed6cc17 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4ce8083a0b61c81a1a79484cab576a44 = $(`<div id="html_4ce8083a0b61c81a1a79484cab576a44" style="width: 100.0%; height: 100.0%;"><b>Mama Johnson Field - 4 St & Jackson St</b><br>Departures: 2,802<br>Avg trip: 8.7 min</div>`)[0];
+                popup_913a449a45e195b5516891f4eed6cc17.setContent(html_4ce8083a0b61c81a1a79484cab576a44);
+            
+        
+
+        circle_marker_5986074727b1215b3525db0a02d9e8ed.bindPopup(popup_913a449a45e195b5516891f4eed6cc17)
+        ;
+
+        
+    
+    
+            var circle_marker_ee8d07414bf7c06d5377158c5193ffa7 = L.circleMarker(
+                [40.72210522054616, -74.07143556159747],
+                {"bubblingMouseEvents": true, "color": "#5183bb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5183bb", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.552508613772597, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_7e485d0569fe4e06b3e1fb74f63b230a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2e98b2085697fd63cc78fc5e84a7b569 = $(`<div id="html_2e98b2085697fd63cc78fc5e84a7b569" style="width: 100.0%; height: 100.0%;"><b>Bergen Ave</b><br>Departures: 2,706<br>Avg trip: 9.7 min</div>`)[0];
+                popup_7e485d0569fe4e06b3e1fb74f63b230a.setContent(html_2e98b2085697fd63cc78fc5e84a7b569);
+            
+        
+
+        circle_marker_ee8d07414bf7c06d5377158c5193ffa7.bindPopup(popup_7e485d0569fe4e06b3e1fb74f63b230a)
+        ;
+
+        
+    
+    
+            var circle_marker_ce64d7ad7054b26c065557c7210e3979 = L.circleMarker(
+                [40.72574982879908, -74.07193939005892],
+                {"bubblingMouseEvents": true, "color": "#4f81ba", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4f81ba", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.482654457922311, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_0bc72d408fadac787159dcf3c0c2bfea = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9dbf5c3204042def7dd5cee62a9333d8 = $(`<div id="html_9dbf5c3204042def7dd5cee62a9333d8" style="width: 100.0%; height: 100.0%;"><b>Fairmount Ave</b><br>Departures: 2,632<br>Avg trip: 8.6 min</div>`)[0];
+                popup_0bc72d408fadac787159dcf3c0c2bfea.setContent(html_9dbf5c3204042def7dd5cee62a9333d8);
+            
+        
+
+        circle_marker_ce64d7ad7054b26c065557c7210e3979.bindPopup(popup_0bc72d408fadac787159dcf3c0c2bfea)
+        ;
+
+        
+    
+    
+            var circle_marker_ff297cdddb843f84c821c054920d6e2b = L.circleMarker(
+                [40.71278759090969, -74.03648783216259],
+                {"bubblingMouseEvents": true, "color": "#4d7fb9", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4d7fb9", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.38825695001652, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_8d1b6ec0efc3b526a0ebac99eccf9e9d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a29e892a63642f704865ac0a05938a8a = $(`<div id="html_a29e892a63642f704865ac0a05938a8a" style="width: 100.0%; height: 100.0%;"><b>Essex Light Rail</b><br>Departures: 2,532<br>Avg trip: 12.4 min</div>`)[0];
+                popup_8d1b6ec0efc3b526a0ebac99eccf9e9d.setContent(html_a29e892a63642f704865ac0a05938a8a);
+            
+        
+
+        circle_marker_ff297cdddb843f84c821c054920d6e2b.bindPopup(popup_8d1b6ec0efc3b526a0ebac99eccf9e9d)
+        ;
+
+        
+    
+    
+            var circle_marker_2fc20f51539fbd926e8b07dbb9ef33b7 = L.circleMarker(
+                [40.745854298781, -74.05722085051806],
+                {"bubblingMouseEvents": true, "color": "#4878b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4878b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.181526407702837, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_b1ecf5ba5ebf7f234bd9d940c51bbd55 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8a3dbef5bcefef0ca97c1930dce176a7 = $(`<div id="html_8a3dbef5bcefef0ca97c1930dce176a7" style="width: 100.0%; height: 100.0%;"><b>Leonard Gordon Park</b><br>Departures: 2,313<br>Avg trip: 12.0 min</div>`)[0];
+                popup_b1ecf5ba5ebf7f234bd9d940c51bbd55.setContent(html_8a3dbef5bcefef0ca97c1930dce176a7);
+            
+        
+
+        circle_marker_2fc20f51539fbd926e8b07dbb9ef33b7.bindPopup(popup_b1ecf5ba5ebf7f234bd9d940c51bbd55)
+        ;
+
+        
+    
+    
+            var circle_marker_7e6c243732a3e63be417cc4a4e849a23 = L.circleMarker(
+                [40.73478769206154, -74.0504349654756],
+                {"bubblingMouseEvents": true, "color": "#4878b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4878b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.145655354698636, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_b7a3e7dc7e7f327d8a6820463b57b6ba = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8f23541129641b4e23aa0d0a56839b23 = $(`<div id="html_8f23541129641b4e23aa0d0a56839b23" style="width: 100.0%; height: 100.0%;"><b>Christ Hospital</b><br>Departures: 2,275<br>Avg trip: 10.2 min</div>`)[0];
+                popup_b7a3e7dc7e7f327d8a6820463b57b6ba.setContent(html_8f23541129641b4e23aa0d0a56839b23);
+            
+        
+
+        circle_marker_7e6c243732a3e63be417cc4a4e849a23.bindPopup(popup_b7a3e7dc7e7f327d8a6820463b57b6ba)
+        ;
+
+        
+    
+    
+            var circle_marker_540ee714b5dffbe8f88be3a72b98e5ab = L.circleMarker(
+                [40.74871284761165, -74.04048342742566],
+                {"bubblingMouseEvents": true, "color": "#436fb1", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#436fb1", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.826591777977061, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_8fcd40de0866ac71ac7c84c5f2cf3517 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c180d3af5d941b19b00897421fb64135 = $(`<div id="html_c180d3af5d941b19b00897421fb64135" style="width: 100.0%; height: 100.0%;"><b>Heights Elevator</b><br>Departures: 1,937<br>Avg trip: 13.0 min</div>`)[0];
+                popup_8fcd40de0866ac71ac7c84c5f2cf3517.setContent(html_c180d3af5d941b19b00897421fb64135);
+            
+        
+
+        circle_marker_540ee714b5dffbe8f88be3a72b98e5ab.bindPopup(popup_8fcd40de0866ac71ac7c84c5f2cf3517)
+        ;
+
+        
+    
+    
+            var circle_marker_2688aaab5cf0376a7ad5d998f46803a2 = L.circleMarker(
+                [40.72758698587556, -74.07102616123022],
+                {"bubblingMouseEvents": true, "color": "#426cb0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#426cb0", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.767121347996413, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_59fc9572041d4a0579259a8d965e64a2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3c5ed3184b4381e416607ba1b0f284d2 = $(`<div id="html_3c5ed3184b4381e416607ba1b0f284d2" style="width: 100.0%; height: 100.0%;"><b>Glenwood Ave</b><br>Departures: 1,874<br>Avg trip: 10.6 min</div>`)[0];
+                popup_59fc9572041d4a0579259a8d965e64a2.setContent(html_3c5ed3184b4381e416607ba1b0f284d2);
+            
+        
+
+        circle_marker_2688aaab5cf0376a7ad5d998f46803a2.bindPopup(popup_59fc9572041d4a0579259a8d965e64a2)
+        ;
+
+        
+    
+    
+            var circle_marker_c26db004b3802e24fc8036cc862f2128 = L.circleMarker(
+                [40.72464085457066, -74.07836635757585],
+                {"bubblingMouseEvents": true, "color": "#416aaf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#416aaf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.71425874356917, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_20c21271876a72911a586640334e5a51 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5b6a3c302a0e3f8cfc5d8b7f1e1ab7dd = $(`<div id="html_5b6a3c302a0e3f8cfc5d8b7f1e1ab7dd" style="width: 100.0%; height: 100.0%;"><b>Lincoln Park</b><br>Departures: 1,818<br>Avg trip: 15.6 min</div>`)[0];
+                popup_20c21271876a72911a586640334e5a51.setContent(html_5b6a3c302a0e3f8cfc5d8b7f1e1ab7dd);
+            
+        
+
+        circle_marker_c26db004b3802e24fc8036cc862f2128.bindPopup(popup_20c21271876a72911a586640334e5a51)
+        ;
+
+        
+    
+    
+            var circle_marker_5fe37d065846c87101a8b9b9906f014d = L.circleMarker(
+                [40.71928914494498, -74.07122039405078],
+                {"bubblingMouseEvents": true, "color": "#416aaf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#416aaf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.712370793411054, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_9d2c313838200231e7e153b4feac3c97 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3524eff7bbc855c763b611f3fd54a5a2 = $(`<div id="html_3524eff7bbc855c763b611f3fd54a5a2" style="width: 100.0%; height: 100.0%;"><b>Astor Place</b><br>Departures: 1,816<br>Avg trip: 11.0 min</div>`)[0];
+                popup_9d2c313838200231e7e153b4feac3c97.setContent(html_3524eff7bbc855c763b611f3fd54a5a2);
+            
+        
+
+        circle_marker_5fe37d065846c87101a8b9b9906f014d.bindPopup(popup_9d2c313838200231e7e153b4feac3c97)
+        ;
+
+        
+    
+    
+            var circle_marker_177f5f6aeafcde67a9a33623f20deee8 = L.circleMarker(
+                [40.71437345817145, -74.06664298876207],
+                {"bubblingMouseEvents": true, "color": "#416aaf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#416aaf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.673667815169679, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_20a4d6fe53ac7a12fb85d2dd8568f088 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dcdd42a154b164d61dc2339876ed332c = $(`<div id="html_dcdd42a154b164d61dc2339876ed332c" style="width: 100.0%; height: 100.0%;"><b>Communipaw & Berry Lane</b><br>Departures: 1,775<br>Avg trip: 13.4 min</div>`)[0];
+                popup_20a4d6fe53ac7a12fb85d2dd8568f088.setContent(html_dcdd42a154b164d61dc2339876ed332c);
+            
+        
+
+        circle_marker_177f5f6aeafcde67a9a33623f20deee8.bindPopup(popup_20a4d6fe53ac7a12fb85d2dd8568f088)
+        ;
+
+        
+    
+    
+            var circle_marker_14aca36d6a9405385b6bb89c7fea4b6b = L.circleMarker(
+                [40.73496958898625, -74.05952670543134],
+                {"bubblingMouseEvents": true, "color": "#4065ac", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4065ac", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.4895926747533865, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_3273b2fb8db373ab39d2078cb3cd0490 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_11c7c577193a0536b36477717d413741 = $(`<div id="html_11c7c577193a0536b36477717d413741" style="width: 100.0%; height: 100.0%;"><b>5 Corners Library</b><br>Departures: 1,580<br>Avg trip: 11.1 min</div>`)[0];
+                popup_3273b2fb8db373ab39d2078cb3cd0490.setContent(html_11c7c577193a0536b36477717d413741);
+            
+        
+
+        circle_marker_14aca36d6a9405385b6bb89c7fea4b6b.bindPopup(popup_3273b2fb8db373ab39d2078cb3cd0490)
+        ;
+
+        
+    
+    
+            var circle_marker_2926746b87f9d5e544b974a75c3717d4 = L.circleMarker(
+                [40.71664379071478, -74.0424039025052],
+                {"bubblingMouseEvents": true, "color": "#3f62ab", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3f62ab", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.424458394298391, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_05d9f6df4a1762e12c1f5e4ab6678131 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_97531832b900608958ab89d3fca69986 = $(`<div id="html_97531832b900608958ab89d3fca69986" style="width: 100.0%; height: 100.0%;"><b>York St & Marin Blvd</b><br>Departures: 1,511<br>Avg trip: 10.9 min</div>`)[0];
+                popup_05d9f6df4a1762e12c1f5e4ab6678131.setContent(html_97531832b900608958ab89d3fca69986);
+            
+        
+
+        circle_marker_2926746b87f9d5e544b974a75c3717d4.bindPopup(popup_05d9f6df4a1762e12c1f5e4ab6678131)
+        ;
+
+        
+    
+    
+            var circle_marker_087521aae940f64455bad0fd26ca68e1 = L.circleMarker(
+                [40.73771922389456, -74.06692844406727],
+                {"bubblingMouseEvents": true, "color": "#3d5ba7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3d5ba7", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.2186718270637655, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_1b719153d7b0909197c0a7a0a993e65a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2e524d4730ca391192bfd7494a9ee734 = $(`<div id="html_2e524d4730ca391192bfd7494a9ee734" style="width: 100.0%; height: 100.0%;"><b>Dey St</b><br>Departures: 1,293<br>Avg trip: 9.6 min</div>`)[0];
+                popup_1b719153d7b0909197c0a7a0a993e65a.setContent(html_2e524d4730ca391192bfd7494a9ee734);
+            
+        
+
+        circle_marker_087521aae940f64455bad0fd26ca68e1.bindPopup(popup_1b719153d7b0909197c0a7a0a993e65a)
+        ;
+
+        
+    
+    
+            var circle_marker_c17d2dcf0f7dee3e66cacb39586f1e8e = L.circleMarker(
+                [40.71816511675096, -74.08341491202638],
+                {"bubblingMouseEvents": true, "color": "#384ca0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#384ca0", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.73724453674423, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_69bb0abe4771d396495bbe3a26f015a0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_aae4cc58390a56132a0bfe107d0b395c = $(`<div id="html_aae4cc58390a56132a0bfe107d0b395c" style="width: 100.0%; height: 100.0%;"><b>Union St</b><br>Departures: 783<br>Avg trip: 19.7 min</div>`)[0];
+                popup_69bb0abe4771d396495bbe3a26f015a0.setContent(html_aae4cc58390a56132a0bfe107d0b395c);
+            
+        
+
+        circle_marker_c17d2dcf0f7dee3e66cacb39586f1e8e.bindPopup(popup_69bb0abe4771d396495bbe3a26f015a0)
+        ;
+
+        
+    
+    
+            var circle_marker_5561f59767a538bc084c994f3b41a2ba = L.circleMarker(
+                [40.716884045998405, -74.03285172664913],
+                {"bubblingMouseEvents": true, "color": "#36479e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#36479e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.589984424411195, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_984fca42911b3314e42ac75347136600 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0cb86df339f1bf7db47b0954062146ad = $(`<div id="html_0cb86df339f1bf7db47b0954062146ad" style="width: 100.0%; height: 100.0%;"><b>Columbus Dr at Exchange Pl</b><br>Departures: 627<br>Avg trip: 8.2 min</div>`)[0];
+                popup_984fca42911b3314e42ac75347136600.setContent(html_0cb86df339f1bf7db47b0954062146ad);
+            
+        
+
+        circle_marker_5561f59767a538bc084c994f3b41a2ba.bindPopup(popup_984fca42911b3314e42ac75347136600)
+        ;
+
+        
+    
+    
+            var circle_marker_a0ec432a682539c97cf51b5cd1bbacfc = L.circleMarker(
+                [40.71114724991365, -74.07889846310017],
+                {"bubblingMouseEvents": true, "color": "#36459c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#36459c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.5446736206164156, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_e54b87ed5444dd3058d5ff3eb34aba37 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_da550816f681a186c43221ad02b280f2 = $(`<div id="html_da550816f681a186c43221ad02b280f2" style="width: 100.0%; height: 100.0%;"><b>Jackson Square</b><br>Departures: 579<br>Avg trip: 19.5 min</div>`)[0];
+                popup_e54b87ed5444dd3058d5ff3eb34aba37.setContent(html_da550816f681a186c43221ad02b280f2);
+            
+        
+
+        circle_marker_a0ec432a682539c97cf51b5cd1bbacfc.bindPopup(popup_e54b87ed5444dd3058d5ff3eb34aba37)
+        ;
+
+        
+    
+    
+            var circle_marker_f559eed1bcbd58b55057205b1df53be9 = L.circleMarker(
+                [40.70663813832292, -74.08670532895589],
+                {"bubblingMouseEvents": true, "color": "#34409a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#34409a", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.364374380516354, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_188eec3475c80f1683a8f4b44374a34b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_08c1dafef498333860291283f951df67 = $(`<div id="html_08c1dafef498333860291283f951df67" style="width: 100.0%; height: 100.0%;"><b>Bergen Ave & Stegman St</b><br>Departures: 388<br>Avg trip: 27.1 min</div>`)[0];
+                popup_188eec3475c80f1683a8f4b44374a34b.setContent(html_08c1dafef498333860291283f951df67);
+            
+        
+
+        circle_marker_f559eed1bcbd58b55057205b1df53be9.bindPopup(popup_188eec3475c80f1683a8f4b44374a34b)
+        ;
+
+        
+    
+    
+            var circle_marker_38af57b2faf8d7be8ba83fd018bddc1b = L.circleMarker(
+                [40.70923428326861, -74.08073624155072],
+                {"bubblingMouseEvents": true, "color": "#333d99", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#333d99", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.272808797847737, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_4003a291ed4573bce29d0e533682076e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1ed1e92cfbd18c89307278b78c574142 = $(`<div id="html_1ed1e92cfbd18c89307278b78c574142" style="width: 100.0%; height: 100.0%;"><b>Grant Ave & MLK Dr</b><br>Departures: 291<br>Avg trip: 21.0 min</div>`)[0];
+                popup_4003a291ed4573bce29d0e533682076e.setContent(html_1ed1e92cfbd18c89307278b78c574142);
+            
+        
+
+        circle_marker_38af57b2faf8d7be8ba83fd018bddc1b.bindPopup(popup_4003a291ed4573bce29d0e533682076e)
+        ;
+
+        
+    
+    
+            var circle_marker_dd9f61e94caa67a643c2384add45ebf4 = L.circleMarker(
+                [40.74030674266667, -74.03680911533333],
+                {"bubblingMouseEvents": true, "color": "#313695", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#313695", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.000943975079058, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_be10ef4224057d80e3314eafff4955a0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f96d2b2c323ae87f1245471d9db23289 = $(`<div id="html_f96d2b2c323ae87f1245471d9db23289" style="width: 100.0%; height: 100.0%;"><b>W 44 St & 11 Ave</b><br>Departures: 3<br>Avg trip: 14.9 min</div>`)[0];
+                popup_be10ef4224057d80e3314eafff4955a0.setContent(html_f96d2b2c323ae87f1245471d9db23289);
+            
+        
+
+        circle_marker_dd9f61e94caa67a643c2384add45ebf4.bindPopup(popup_be10ef4224057d80e3314eafff4955a0)
+        ;
+
+        
+    
+    
+            var circle_marker_b5de308d8b76eab8e797101a21b32d57 = L.circleMarker(
+                [40.736142076, -74.05368935977778],
+                {"bubblingMouseEvents": true, "color": "#313695", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#313695", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.000943975079058, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_13b5450a0126295fc66c2a94549371af = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c337c74e562fa855f264bee7638fb36d = $(`<div id="html_c337c74e562fa855f264bee7638fb36d" style="width: 100.0%; height: 100.0%;"><b>5 Ave & E 87 St</b><br>Departures: 3<br>Avg trip: 33.0 min</div>`)[0];
+                popup_13b5450a0126295fc66c2a94549371af.setContent(html_c337c74e562fa855f264bee7638fb36d);
+            
+        
+
+        circle_marker_b5de308d8b76eab8e797101a21b32d57.bindPopup(popup_13b5450a0126295fc66c2a94549371af)
+        ;
+
+        
+    
+    
+            var circle_marker_b38d397612cbf22a889d18198709f65b = L.circleMarker(
+                [40.735353589, -74.046973348],
+                {"bubblingMouseEvents": true, "color": "#313695", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#313695", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.000943975079058, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_6cb0c5bfd467c5c028a6235ed0e7cc90 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_40842e5a94578440c1997a8041b2738e = $(`<div id="html_40842e5a94578440c1997a8041b2738e" style="width: 100.0%; height: 100.0%;"><b>Cleveland Pl & Spring St</b><br>Departures: 3<br>Avg trip: 16.5 min</div>`)[0];
+                popup_6cb0c5bfd467c5c028a6235ed0e7cc90.setContent(html_40842e5a94578440c1997a8041b2738e);
+            
+        
+
+        circle_marker_b38d397612cbf22a889d18198709f65b.bindPopup(popup_6cb0c5bfd467c5c028a6235ed0e7cc90)
+        ;
+
+        
+    
+    
+            var circle_marker_4d06a5589cc3630b975f75aa2c8de0d6 = L.circleMarker(
+                [40.72913459633333, -74.04907576044444],
+                {"bubblingMouseEvents": true, "color": "#313695", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#313695", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.000943975079058, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_a465955a51e3f9406ca3821586fd291c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a8ec5f7243842472d6adfb276d259c9c = $(`<div id="html_a8ec5f7243842472d6adfb276d259c9c" style="width: 100.0%; height: 100.0%;"><b>University Pl & E 14 St</b><br>Departures: 3<br>Avg trip: 28.2 min</div>`)[0];
+                popup_a465955a51e3f9406ca3821586fd291c.setContent(html_a8ec5f7243842472d6adfb276d259c9c);
+            
+        
+
+        circle_marker_4d06a5589cc3630b975f75aa2c8de0d6.bindPopup(popup_a465955a51e3f9406ca3821586fd291c)
+        ;
+
+        
+    
+    
+            var circle_marker_fd27e96f558f7a008bdb9b7f961b424b = L.circleMarker(
+                [40.72358888616667, -74.03984988233333],
+                {"bubblingMouseEvents": true, "color": "#313695", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#313695", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_4d27fe042492cfba4f2150c02ad1c1cf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d3e9ed76e99cd956c131a600b67cb9e0 = $(`<div id="html_d3e9ed76e99cd956c131a600b67cb9e0" style="width: 100.0%; height: 100.0%;"><b>8 Ave & W 49 St</b><br>Departures: 2<br>Avg trip: 19.5 min</div>`)[0];
+                popup_4d27fe042492cfba4f2150c02ad1c1cf.setContent(html_d3e9ed76e99cd956c131a600b67cb9e0);
+            
+        
+
+        circle_marker_fd27e96f558f7a008bdb9b7f961b424b.bindPopup(popup_4d27fe042492cfba4f2150c02ad1c1cf)
+        ;
+
+        
+    
+    
+            var circle_marker_4e16fc46f213b5a8232dadca722379b6 = L.circleMarker(
+                [40.735353589, -74.046973348],
+                {"bubblingMouseEvents": true, "color": "#313695", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#313695", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_a87c080d26d92ae4fe5368a561f78f99 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_23f0f5f861f72173f03c4efcb94ba365 = $(`<div id="html_23f0f5f861f72173f03c4efcb94ba365" style="width: 100.0%; height: 100.0%;"><b>George St & Wilson Ave</b><br>Departures: 2<br>Avg trip: 13.8 min</div>`)[0];
+                popup_a87c080d26d92ae4fe5368a561f78f99.setContent(html_23f0f5f861f72173f03c4efcb94ba365);
+            
+        
+
+        circle_marker_4e16fc46f213b5a8232dadca722379b6.bindPopup(popup_a87c080d26d92ae4fe5368a561f78f99)
+        ;
+
+        
+    
+    
+            var circle_marker_4035b0a34737deb6914f2caa1ad19eac = L.circleMarker(
+                [40.735353589, -74.046973348],
+                {"bubblingMouseEvents": true, "color": "#313695", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#313695", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_215832df1cfad21c0341480496cfe5dc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1dd46802a77809241e2d68b73a7baa60 = $(`<div id="html_1dd46802a77809241e2d68b73a7baa60" style="width: 100.0%; height: 100.0%;"><b>Grand Army Plaza & Central Park S</b><br>Departures: 2<br>Avg trip: 55.4 min</div>`)[0];
+                popup_215832df1cfad21c0341480496cfe5dc.setContent(html_1dd46802a77809241e2d68b73a7baa60);
+            
+        
+
+        circle_marker_4035b0a34737deb6914f2caa1ad19eac.bindPopup(popup_215832df1cfad21c0341480496cfe5dc)
+        ;
+
+        
+    
+    
+            var circle_marker_c8787b219b55ffe2dee93c1e647f8062 = L.circleMarker(
+                [40.735353589, -74.046973348],
+                {"bubblingMouseEvents": true, "color": "#313695", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#313695", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_fed91634bdd938f59abdd5561b0ef26b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cf7eb9ff9c8edc1c7b73a1aac0ac2fba = $(`<div id="html_cf7eb9ff9c8edc1c7b73a1aac0ac2fba" style="width: 100.0%; height: 100.0%;"><b>48 Ave & 5 St</b><br>Departures: 2<br>Avg trip: 10.6 min</div>`)[0];
+                popup_fed91634bdd938f59abdd5561b0ef26b.setContent(html_cf7eb9ff9c8edc1c7b73a1aac0ac2fba);
+            
+        
+
+        circle_marker_c8787b219b55ffe2dee93c1e647f8062.bindPopup(popup_fed91634bdd938f59abdd5561b0ef26b)
+        ;
+
+        
+    
+    
+            var circle_marker_54ff85c01f71f959b473871d5ea8e611 = L.circleMarker(
+                [40.735353589, -74.046973348],
+                {"bubblingMouseEvents": true, "color": "#313695", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#313695", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_42e6b55a9d6202eac1426c951a8d4586 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_157e488bda1e5d95b7ba49bc6b972eb1 = $(`<div id="html_157e488bda1e5d95b7ba49bc6b972eb1" style="width: 100.0%; height: 100.0%;"><b>E 20 St & FDR Dr</b><br>Departures: 2<br>Avg trip: 38.8 min</div>`)[0];
+                popup_42e6b55a9d6202eac1426c951a8d4586.setContent(html_157e488bda1e5d95b7ba49bc6b972eb1);
+            
+        
+
+        circle_marker_54ff85c01f71f959b473871d5ea8e611.bindPopup(popup_42e6b55a9d6202eac1426c951a8d4586)
+        ;
+
+        
+    
+    
+            var circle_marker_83a13f33ae1a20bfc242fd110ca6f8a0 = L.circleMarker(
+                [40.73771905, -74.06712138333333],
+                {"bubblingMouseEvents": true, "color": "#313695", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#313695", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_ef52ffba9f42e424800c8024972cfc9b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_956ad93a17b39ebf573927ab6bd18920 = $(`<div id="html_956ad93a17b39ebf573927ab6bd18920" style="width: 100.0%; height: 100.0%;"><b>E 43 St & Madison Ave</b><br>Departures: 2<br>Avg trip: 12.3 min</div>`)[0];
+                popup_ef52ffba9f42e424800c8024972cfc9b.setContent(html_956ad93a17b39ebf573927ab6bd18920);
+            
+        
+
+        circle_marker_83a13f33ae1a20bfc242fd110ca6f8a0.bindPopup(popup_ef52ffba9f42e424800c8024972cfc9b)
+        ;
+
+        
+    
+    
+            var circle_marker_efcec2f20872cb470fc5828698c0a3e8 = L.circleMarker(
+                [40.736287415, -74.02909564999999],
+                {"bubblingMouseEvents": true, "color": "#313695", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#313695", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_2cba442d91bb1de40fa7c1f6fca7ce97 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_74d002da5a8d55086da51b3ec03df092 = $(`<div id="html_74d002da5a8d55086da51b3ec03df092" style="width: 100.0%; height: 100.0%;"><b>Broadway & W 56 St</b><br>Departures: 2<br>Avg trip: 1.9 min</div>`)[0];
+                popup_2cba442d91bb1de40fa7c1f6fca7ce97.setContent(html_74d002da5a8d55086da51b3ec03df092);
+            
+        
+
+        circle_marker_efcec2f20872cb470fc5828698c0a3e8.bindPopup(popup_2cba442d91bb1de40fa7c1f6fca7ce97)
+        ;
+
+        
+    
+    
+            var circle_marker_e1628573075734ede672d169b33d2e90 = L.circleMarker(
+                [40.735353589, -74.046973348],
+                {"bubblingMouseEvents": true, "color": "#313695", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#313695", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_c959b9ae47b7f5f22f57c3e870bed924 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a42437aaeb382758043fa96b4b8fd3de = $(`<div id="html_a42437aaeb382758043fa96b4b8fd3de" style="width: 100.0%; height: 100.0%;"><b>E 68 St & Madison Ave</b><br>Departures: 2<br>Avg trip: 22.5 min</div>`)[0];
+                popup_c959b9ae47b7f5f22f57c3e870bed924.setContent(html_a42437aaeb382758043fa96b4b8fd3de);
+            
+        
+
+        circle_marker_e1628573075734ede672d169b33d2e90.bindPopup(popup_c959b9ae47b7f5f22f57c3e870bed924)
+        ;
+
+        
+    
+    
+            var circle_marker_38a4d94cca73fcbdb1206944e07608ba = L.circleMarker(
+                [40.7219079445, -74.03688571566667],
+                {"bubblingMouseEvents": true, "color": "#313695", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#313695", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_fc207f42acd612ccaa04dd83450b5fb3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_00a826ddf5c8da75c4b75312ad51edac = $(`<div id="html_00a826ddf5c8da75c4b75312ad51edac" style="width: 100.0%; height: 100.0%;"><b>John St & William St</b><br>Departures: 2<br>Avg trip: 12.8 min</div>`)[0];
+                popup_fc207f42acd612ccaa04dd83450b5fb3.setContent(html_00a826ddf5c8da75c4b75312ad51edac);
+            
+        
+
+        circle_marker_38a4d94cca73fcbdb1206944e07608ba.bindPopup(popup_fc207f42acd612ccaa04dd83450b5fb3)
+        ;
+
+        
+    
+    
+            var circle_marker_4844bcd8aeff60d231098180a5f43f59 = L.circleMarker(
+                [40.735353589, -74.046973348],
+                {"bubblingMouseEvents": true, "color": "#313695", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#313695", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_6472912739ea4824e58210e773ad1bd0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7fbd96573b1f30d8fc10900d35f59ccb = $(`<div id="html_7fbd96573b1f30d8fc10900d35f59ccb" style="width: 100.0%; height: 100.0%;"><b>Leonard St & Church St</b><br>Departures: 2<br>Avg trip: 7.9 min</div>`)[0];
+                popup_6472912739ea4824e58210e773ad1bd0.setContent(html_7fbd96573b1f30d8fc10900d35f59ccb);
+            
+        
+
+        circle_marker_4844bcd8aeff60d231098180a5f43f59.bindPopup(popup_6472912739ea4824e58210e773ad1bd0)
+        ;
+
+        
+    
+    
+            var circle_marker_dce5d2a83a376a1835ab57d612818d4b = L.circleMarker(
+                [40.7248423695, -74.040052949],
+                {"bubblingMouseEvents": true, "color": "#313695", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#313695", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_e8ef47e25589e75cae01676f52551e74 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7d79eb375c6965cf2109f333defff172 = $(`<div id="html_7d79eb375c6965cf2109f333defff172" style="width: 100.0%; height: 100.0%;"><b>Stockholm St & Wilson Ave</b><br>Departures: 2<br>Avg trip: 5.6 min</div>`)[0];
+                popup_e8ef47e25589e75cae01676f52551e74.setContent(html_7d79eb375c6965cf2109f333defff172);
+            
+        
+
+        circle_marker_dce5d2a83a376a1835ab57d612818d4b.bindPopup(popup_e8ef47e25589e75cae01676f52551e74)
+        ;
+
+        
+    
+    
+            var circle_marker_1fd4ba9e0d896c6e8302f23e441d35f8 = L.circleMarker(
+                [40.72731411116666, -74.04504173233333],
+                {"bubblingMouseEvents": true, "color": "#313695", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#313695", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_cdef334e1a984e0ed537089f3a3a2ebe = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_45d006552a760427b41095a800f48072 = $(`<div id="html_45d006552a760427b41095a800f48072" style="width: 100.0%; height: 100.0%;"><b>Pearl St & Hanover Square</b><br>Departures: 2<br>Avg trip: 10.4 min</div>`)[0];
+                popup_cdef334e1a984e0ed537089f3a3a2ebe.setContent(html_45d006552a760427b41095a800f48072);
+            
+        
+
+        circle_marker_1fd4ba9e0d896c6e8302f23e441d35f8.bindPopup(popup_cdef334e1a984e0ed537089f3a3a2ebe)
+        ;
+
+        
+    
+    
+            var circle_marker_8f58d5d788f55b26889511e5829e2c49 = L.circleMarker(
+                [40.7365363195, -74.05704736566666],
+                {"bubblingMouseEvents": true, "color": "#313695", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#313695", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+    
+        var popup_0a417cae4c9e99a5d0c54069026239bd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_78049336ad1fc4b19c6207b4e861f7c7 = $(`<div id="html_78049336ad1fc4b19c6207b4e861f7c7" style="width: 100.0%; height: 100.0%;"><b>Madison Ave & E 26 St</b><br>Departures: 2<br>Avg trip: 6.2 min</div>`)[0];
+                popup_0a417cae4c9e99a5d0c54069026239bd.setContent(html_78049336ad1fc4b19c6207b4e861f7c7);
+            
+        
+
+        circle_marker_8f58d5d788f55b26889511e5829e2c49.bindPopup(popup_0a417cae4c9e99a5d0c54069026239bd)
+        ;
+
+        
+    
+    
+            var heat_map_de8c6466b095d05c49ec4ace5a86fe1a = L.heatLayer(
+                [[40.71936817193331, -74.04312290811471, 21189], [40.73608708223173, -74.02913759658237, 19617], [40.7370211881434, -74.02777759759384, 14863], [40.73593198591031, -74.03033320348275, 11942], [40.737315685969335, -74.03100530531958, 10957], [40.727223965951616, -74.03375357253238, 10602], [40.72757044428501, -74.04425289066468, 9520], [40.7310624197441, -74.06440413497073, 9379], [40.72874565075494, -74.0321104339343, 9165], [40.74996570676652, -74.02723149491666, 8219], [40.752877866603214, -74.02430520773967, 7914], [40.73523762696917, -74.04692771809144, 7734], [40.74596839068217, -74.0281708769545, 7553], [40.74094247909394, -74.02860328314331, 7378], [40.71458700421731, -74.04281365043053, 7356], [40.71772849561178, -74.04385020305011, 7343], [40.75060500185264, -74.02408713706309, 7163], [40.71124996571356, -74.05568816211327, 7030], [40.71926682043742, -74.03423269256395, 6821], [40.74541256355253, -74.03333978197611, 6378], [40.721505744114765, -74.04629301016277, 6146], [40.7481734082674, -74.03246050342787, 6116], [40.73877175170258, -74.03926576190155, 6108], [40.72429008396635, -74.03549768378345, 6102], [40.72111920892998, -74.03804201824912, 5965], [40.74264458496115, -74.03226279266435, 5770], [40.74793958370913, -74.0384139951691, 5762], [40.72166456225451, -74.04288557472378, 5759], [40.71847983261874, -74.04773448016611, 5745], [40.71843727879114, -74.03888281794927, 5695], [40.7464054774872, -74.03804811265091, 5535], [40.7374446542888, -74.03570020224855, 5501], [40.75404604181962, -74.03159871313072, 5444], [40.73979149870257, -74.03688462395998, 5230], [40.71638962580298, -74.03438313530633, 5167], [40.73757421606019, -74.04165840167695, 5158], [40.7544658650584, -74.02659195784655, 5120], [40.71515155252953, -74.03768631128004, 4987], [40.71540394941782, -74.0496919534065, 4975], [40.7407460812771, -74.0425612868338, 4914], [40.72538557763989, -74.0675663827704, 4688], [40.74314402326708, -74.02699508153093, 4609], [40.71415010576416, -74.03355541958332, 4595], [40.75187260172156, -74.0303796482302, 4593], [40.71238865713999, -74.03844883749251, 4582], [40.74995911975563, -74.03587299907886, 4582], [40.74226477615149, -74.0350789838607, 4570], [40.72604885485587, -74.05037901235455, 4557], [40.72413870154316, -74.05067535649658, 4194], [40.72332488191328, -74.04589669144637, 4060], [40.73369112350042, -74.06247617632664, 3936], [40.74435428879027, -74.03448108494945, 3919], [40.71348663553362, -74.0628271731608, 3571], [40.72360423758282, -74.06420843617266, 3415], [40.72163628188546, -74.04998894075412, 3204], [40.73915225446556, -74.03307703446173, 3099], [40.72528569981808, -74.04555675646965, 3072], [40.725656197486096, -74.04880766548337, 3014], [40.73115697297089, -74.05752789147532, 3012], [40.71943493675919, -74.05098961490901, 3008], [40.74263803834332, -74.05181295261148, 3002], [40.74448354983445, -74.04390427976968, 2980], [40.75082361590006, -74.03357841745935, 2841], [40.73758136251011, -74.05244146011343, 2836], [40.74314140425482, -74.0400645349518, 2802], [40.72210522054616, -74.07143556159747, 2706], [40.72574982879908, -74.07193939005892, 2632], [40.71278759090969, -74.03648783216259, 2532], [40.745854298781, -74.05722085051806, 2313], [40.73478769206154, -74.0504349654756, 2275], [40.74871284761165, -74.04048342742566, 1937], [40.72758698587556, -74.07102616123022, 1874], [40.72464085457066, -74.07836635757585, 1818], [40.71928914494498, -74.07122039405078, 1816], [40.71437345817145, -74.06664298876207, 1775], [40.73496958898625, -74.05952670543134, 1580], [40.71664379071478, -74.0424039025052, 1511], [40.73771922389456, -74.06692844406727, 1293], [40.71816511675096, -74.08341491202638, 783], [40.716884045998405, -74.03285172664913, 627], [40.71114724991365, -74.07889846310017, 579], [40.70663813832292, -74.08670532895589, 388], [40.70923428326861, -74.08073624155072, 291], [40.74030674266667, -74.03680911533333, 3], [40.736142076, -74.05368935977778, 3], [40.735353589, -74.046973348, 3], [40.72913459633333, -74.04907576044444, 3], [40.72358888616667, -74.03984988233333, 2], [40.735353589, -74.046973348, 2], [40.735353589, -74.046973348, 2], [40.735353589, -74.046973348, 2], [40.735353589, -74.046973348, 2], [40.73771905, -74.06712138333333, 2], [40.736287415, -74.02909564999999, 2], [40.735353589, -74.046973348, 2], [40.7219079445, -74.03688571566667, 2], [40.735353589, -74.046973348, 2], [40.7248423695, -74.040052949, 2], [40.72731411116666, -74.04504173233333, 2], [40.7365363195, -74.05704736566666, 2]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 20,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_de8c6466b095d05c49ec4ace5a86fe1a.addTo(map_31be8689814de8e2e2a6d6bd31255455);
+        
+</script>
+</html>
